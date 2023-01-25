@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head> Resultados </head>
+    <body>
+        <h3>RESULTADOS FORMULARIOS</h3>
+        <div id="resultados"></div>
+        <a href="Ejer2.html">Volver</a>
+    </body>
+    <script>
+        const resDiv = document.getElementById("resultados")
+        new URLSearchParams(window.location.search).forEach((val,name) => {
+            resDiv.append(`${name}: ${val}`)
+            resDiv.append(document.createElement('br'))
+        })
+    </script>
+</html>
