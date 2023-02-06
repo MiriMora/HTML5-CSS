@@ -1,0 +1,166 @@
+/* IMPORTAMOS LAS ELECCIONES DE GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2? family=Open+Sans:ital,wght@1,600&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* EN LA PAGINA WEB DE GOOGLE FONTS NOS INDICA QUE 
+FONT FAMILY TENEMOS QUE IMPORTAR */
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+/* EMPEZAMOS A DAR SENTIDO A LO CREADO : */
+/* EMPEZAMOS CON EL CONTAINER PARA QUE TODO ESTE EN COLUMNA : */
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* LA SEPARACION DE LAS LINEAS */
+    gap:  20px;
+   
+}
+.google-btn {
+   background-color: #1A73E8;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   padding: 2px;
+   cursor: pointer;
+   
+}
+.botones {
+align-self: flex-start;
+display: flex;
+gap: 20px;
+}
+/* ACCEDEMOS SOLO AL SPAN DE GOOGLE-BTN*/
+.google-btn span {
+    color: white;
+    font-weight: 500;
+    padding: 15px ;
+}
+/* ACCEDEMOS AL GOOGLE-BTN PICTURE*/
+.google-btn picture{
+    width: 36px;
+    background-color: white;
+    height: 36px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* CUANDO SE PASE POR ENCIMA SE CAMBIA LA OPACIDAD */
+.google-btn:hover{
+    opacity: 0.75;
+}
+/* VAMOS A DAR UN TAMAÑO AL LOGO DE GOOGLE QUE HEMOS SELECCIONADO*/
+.google-btn picture img {
+    width: 75%;
+}
+/* ----  BOTON DE TWITTER ---*/
+.twitter-btn {
+    color: #bbb;
+    background-color: #eee ;
+    border: none;
+    width: 40px;
+    border-radius:  5px;
+    cursor: pointer;
+}
+.twitter-btn:hover{
+    background-color:  #ddd;
+}
+
+/* --CON EL SEPARADOR --*/
+.separador {
+    display: flex; /* PARA QUE LO PONGA EN LA MISMA LINEA*/
+    width: 100%;
+    gap: 15px ;
+}
+.separador hr{
+    /* PARA QUE OCUPEN LAS LINEAS TODO LO QUE PUEDAN*/
+    flex-grow: 1;
+    border: none;
+    border-top:  1px solid #ccc;
+}
+.separador span {
+    color: #8b8b8b;
+}
+/* ---- INPUTS -----*/
+.section-inputs{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    }
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch ;
+    gap: 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+label span{
+    font-weight: 700;
+}
+label input{
+    width: 70%;
+    background-color: #f3f3f4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.2s,border 0.2s, box-shadow 0.2s;
+}
+label input:hover{
+    background-color: white;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #eb50ff4f;
+}
+label input:focus {
+    background-color: white;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #eb50ff4f;
+}
+.section-inputs label input{
+    width: 70%;
+    background-color: #f3f3f4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+}
+/*-- ACEPTAR LAS CONDICIONES--*/
+.checkbox-label {
+    display: flex;
+    flex: row;
+    }
+.checkbox-label input[type="checkbox"]{
+    width: 20px;
+}
+.checkbox-label span {
+    font-weight: 400;
+}
+/*-- BOTON DE CREAR CUENTA ---*/
+.submit-btn{
+    background-color:#EA4C89 ;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14pt;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    opacity: 75%;
+}
+
